@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ChatGPT app</title>
+
+    <!-- アイコンの読み込み: https://icooon-mono.com/15306-%e3%82%b7%e3%83%8a%e3%83%97%e3%82%b9%e3%81%ae%e3%83%95%e3%83%aa%e3%83%bc%e7%b4%a0%e6%9d%903/ -->
+    <link rel="icon" href="{{url_for('static', filename='favicon.ico')}}">
+    <!-- TailwindCSSファイル読み込み -->
+    <link rel="stylesheet" href="{{url_for('static',filename='output.css')}}">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-10">
+        <h1 class="text-4xl font-bold text-center mb-6">ChatGPT</h1>
+        <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <form action="/" method="POST">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="user_msg">
+                        質問を入力してください
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="user_msg" name="user_msg" type="text" placeholder="質問を入力">
+                </div>
+                <div class="flex items-center justify-center">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                        送信
+                    </button>
+                </div>
+            </form>
+        </div>
+        {% if res_msg %}
+            <div class="bg-white shadow-md rounded px-8 pt-6 pb-8">
+                <h2 class="text-xl font-bold text-gray-700 mb-4">回答:</h2>
+                <p class="text-gray-700">{{ res_msg }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>

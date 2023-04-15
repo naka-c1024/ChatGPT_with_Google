@@ -1,0 +1,6 @@
+.*
+!.gitignore
+!.dockerignore
+__pycache__
+sandbox
+dev_file.md
