@@ -17,6 +17,12 @@ git clone https://github.com/naka-c1024/ChatGPT_with_Google.git
 
 ## Preparation
 
+### 環境変数ファイルを追加
+
+```
+echo "OPENAI_API_KEY='XXX'\nGOOGLE_API_KEY='XXX'\nGOOGLE_CSE_ID='XXX'" > .env
+```
+
 ### Dockerを使用する場合
 
 ```bash
