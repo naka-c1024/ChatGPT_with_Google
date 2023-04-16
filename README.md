@@ -2,7 +2,7 @@
 
 ChatGPTにGoogle検索機能をつけてレスポンスしてくれるWebアプリです。
 
-# Features
+# Feature
 
 現在のChatGPTは学習しているデータが2021年末までのものであり、最新情報に回答してくれません。
 そのためLangChainとGoogle APIを使用して、Web検索を元に回答してくれるアプリを作成しました。

@@ -33,7 +33,7 @@ def create_agent_prompt(tools):
     ZeroShotAgent用のエージェントプロンプトを作成します。
     """
     prefix = """次の質問にできる限り答えてください。次のツールにアクセスできます:"""
-    suffix = """最終的な答えを出すときは、日本語で出力してください。
+    suffix = """英語で検索し、最終的な答えを出すときは、日本語で出力してください。
 
     Question: {input}
     {agent_scratchpad}
