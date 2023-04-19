@@ -54,10 +54,10 @@ python main.py
 
 # 使用技術
 
-### 環境: Docker
+環境: Docker
 
-### フロントエンド: HTML，CSS (TailWindCSS)
+フロントエンド: HTML，CSS (TailWindCSS)
 
-### バックエンド: Python (Flask)
+バックエンド: Python (Flask)
 
-### API: Google Programmable Search Engine API, OpenAI API
+API: Google Programmable Search Engine API, OpenAI API
